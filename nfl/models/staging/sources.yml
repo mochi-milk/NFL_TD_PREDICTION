@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: bronze          # a nickname you use in SQL
+    schema: nfl_bronze    # the real BigQuery dataset
+    tables:
+      - name: pbp
+      - name: schedules
+      - name: rosters
+      - name: injuries

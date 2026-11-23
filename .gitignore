@@ -1,0 +1,44 @@
+# --- Secrets: never upload these ---
+Key.json
+*.json.key
+.env
+.env.*
+*.pem
+
+# --- Python virtual environment ---
+.venv/
+venv/
+env/
+
+# --- Python cache files ---
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Data files (download them again instead of storing them) ---
+*.parquet
+*.csv
+data/
+
+# --- dbt ---
+nfl/target/
+nfl/dbt_packages/
+nfl/logs/
+profiles.yml
+
+# --- Airflow ---
+logs/
+airflow.db
+
+# --- Terraform ---
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# --- Computer and editor files ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
